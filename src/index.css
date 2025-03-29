@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 6px;
+  border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; 
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+@layer components {
+  .hover-effect {
+    @apply relative overflow-hidden cursor-pointer;
+  }
+
+  .hover-effect::after {
+    content: "";
+    @apply absolute bottom-0 left-[-100%] w-full h-[4px] bg-purple-800 transition-all duration-500;
+  }
+
+  .hover-effect:hover::after {
+    @apply left-0;
+  }
+}
