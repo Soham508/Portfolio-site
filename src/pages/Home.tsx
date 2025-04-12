@@ -5,15 +5,11 @@ import { fadeIn } from "@/lib/utils";
 
 const Home = () => {
 
-
     const [x, setX] = useState<number | null>(null);
     const [y, setY] = useState<number | null>(null);
 
-
-
     return (
         <>
-
             <div
                 id="about"
                 className="w-full justify-center mt-20 p-2 flex items-center ease-in duration-300"
@@ -32,14 +28,13 @@ const Home = () => {
                             <h2 className="py-4">Who I Am</h2>
 
                             <p className="py-2 text-slate-100">
-                                I specialize in building mobile responsive front-end UI applications
-                                that connect with API’s and other backend technologies. I’m
-                                passionate about learning new technologies and understand there is
-                                more than one way to accomplish a task. Though I am most proficient
-                                in building front-end applications using HTML, CSS, Javascript, and
-                                React, I am a quick learner and can pick up new tech stacks as
-                                needed. I believe that being a great developer is not using one
-                                specific language, but choosing the best tool for the job.
+                                I am a passionate full-stack developer with expertise in building responsive and dynamic web applications. My skill set includes modern technologies like React, TypeScript, Node.js, and Django, along with experience in database management using MongoDB and PostgreSQL. I am also proficient in cloud services like Firebase and AWS, enabling me to create scalable and efficient solutions.
+                            </p>
+                            <p className="py-2 text-slate-100">
+                                My portfolio showcases a variety of projects, including a collaborative 2D graphic rendering app, a web annotator browser extension, and an equity portfolio advisor application. These projects highlight my ability to integrate real-time features, authentication, and data visualization into user-friendly interfaces.
+                            </p>
+                            <p className="py-2 text-slate-100">
+                                I am always eager to learn new technologies and take on challenging projects. My goal is to deliver high-quality software solutions that meet user needs and exceed expectations.
                             </p>
                         </motion.div>
                     </div>

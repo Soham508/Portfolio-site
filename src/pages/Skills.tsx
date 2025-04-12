@@ -8,6 +8,11 @@ import tailwind from "./../assets/tailwind.png";
 import typescript from "./../assets/typescript.png";
 import redis from "./../assets/redis.png";
 import linux from "./../assets/linux.jpeg";
+import aws from "./../assets/blog.png";
+import rabbitmq from "./../assets/rabbitmq.png";
+import python from "./../assets/python.jpg";
+import django from "./../assets/django.jpg";
+
 
 const Skills = () => {
     return (
@@ -116,6 +121,46 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-col items-center justify-center">
                                 <h3>Redis</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-6 shadow-lg max-h-28 shadow-purple-800 hover:shadow-purple-600 bg-indigo-950 rounded-xl hover:scale-105 ease-in duration-300">
+                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                            <div className="m-auto">
+                                <img src={aws} width={104} height={64} alt="/" />
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <h3>AWS Clound</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-6 shadow-lg max-h-28 shadow-purple-800 hover:shadow-purple-600 bg-indigo-950 rounded-xl hover:scale-105 ease-in duration-300">
+                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                            <div className="m-auto">
+                                <img src={rabbitmq} width={104} height={64} alt="/" />
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <h3>RabbitMQ</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-6 shadow-lg max-h-28 shadow-purple-800 hover:shadow-purple-600 bg-indigo-950 rounded-xl hover:scale-105 ease-in duration-300">
+                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                            <div className="m-auto">
+                                <img src={python} width={104} height={64} alt="/" />
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <h3>Python</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-6 shadow-lg max-h-28 shadow-purple-800 hover:shadow-purple-600 bg-indigo-950 rounded-xl hover:scale-105 ease-in duration-300">
+                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                            <div className="m-auto">
+                                <img src={django} width={104} height={64} alt="/" />
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <h3>Django</h3>
                             </div>
                         </div>
                     </div>
