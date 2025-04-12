@@ -1,5 +1,5 @@
 import logo from './../assets/logo.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //import { motion, useScroll } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -14,7 +14,6 @@ const Navbar = () => {
     const [scrollPosition, setScrollPosition] = useState<number>(0);
     const [nav, setNav] = useState(true);
     const [mobile, setMobile] = useState(false)
-    const navigate = useNavigate();
 
     const handleScroll = () => {
 
